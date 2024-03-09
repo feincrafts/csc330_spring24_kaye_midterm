@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def default():
-    return "Hello!"
+    return "Hello! Use add/1/2 subtract/1/2 multiply/1/2 or divide/1/2 to use the calculator"
 
 @app.route('/add/<num1>/<num2>')
 def add_nums(num1,num2):
